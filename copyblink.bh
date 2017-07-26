@@ -1,0 +1,10 @@
+#!/bin/bash
+echo copying blink to dev/sdb2/home
+sudo mkdir /mnt/ext4
+sudo mount /dev/sdb2 /mnt/ext4
+sudo mkdir /mnt/ext4/home
+sudo cp S50blink /mnt/ext4/etc/init.d/
+sudo cp blink /mnt/ext4/home/
+sudo umount /mnt/ext4
+sudo umount /dev/sdb2
+sudo umount /dev/sdb1
