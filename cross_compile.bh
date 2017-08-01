@@ -1,0 +1,4 @@
+#!/bin/bash
+export PATH=../buildroot/output/host/usr/bin:$PATH
+make clean
+make -f makefile.cross

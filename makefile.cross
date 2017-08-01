@@ -1,7 +1,7 @@
 OBJ = .
 SRC = .
 CFLAGS := $(CFLAGS) -O3 -Wall
-CC:= gcc
+CC:= arm-linux-gcc
 
 all: blink
 
