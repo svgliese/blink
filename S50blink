@@ -6,12 +6,12 @@
 case "$1" in
   start)
 	printf "Starting custom GPIO: "
-	/home/blink
+	/usr/bin/blink
 	[ $? = 0 ] && echo "OK" || echo "FAIL"
 	;;
   stop)
 	printf "Stopping custom GPIO: "
-	/sbin/blink stop
+	/usr/bin/blink stop
 	[ $? = 0 ] && echo "OK" || echo "FAIL"
 	;;
   restart|reload)
